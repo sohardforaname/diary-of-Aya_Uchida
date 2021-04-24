@@ -263,11 +263,11 @@ GEMM和FastIO的优化力度基本达到我现有知识的瓶颈，所以需要�
 ``` C++
 template <class Func, class T>
 auto curryingFunction(Func& func) {
-    return [&](T& a) {
-       	for (auto& e : a) {
-          	func(e);
+	return [&](T& a) {
+		for (auto& e : a) {
+			func(e);
         }
-	};
+    };
 }
 template <class T>
 struct Functor {
