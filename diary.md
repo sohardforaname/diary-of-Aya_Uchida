@@ -278,8 +278,8 @@ struct Functor {
 template <class T>
 struct Functor1 {
 	void operator()(T& a) {
-        cout << a << endl;
-    }
+		cout << a << endl;
+	}
 };
 auto doublefunc = curryingFunction<Functor<int>, list<int>>(*new Functor<int>());
 auto printfunc = curryingFunction<Functor1<int>, list<int>>(*new Functor1<int>());
