@@ -267,7 +267,7 @@ auto curryingFunction(Func& func) {
        	for (auto& e : a) {
           	func(e);
         }
-	};
+    };
 }
 template <class T>
 struct Functor {
